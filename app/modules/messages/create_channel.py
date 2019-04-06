@@ -18,7 +18,7 @@ def create_channel():
             .channels \
             .create(
             friendly_name=title,
-            unique_name=id_ticket_hash, type="private")
+            unique_name=id_ticket_hash)
 
         id_channel = channel.sid
         message["id_channel"] = id_channel
